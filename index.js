@@ -1,9 +1,10 @@
 const express = require("express");
-const path = require("path");
 const app = express();
 
-// Access the environment variable set in the Dockerfile
 const port = process.env.PORT ?? 3001;
+
+// Use the express.static middleware to serve files from the current directory
+app.use(express.static(__dirname));
 
 // Serve the static HTML file
 app.get("/", (req, res) => {
