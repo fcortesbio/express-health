@@ -1,21 +1,26 @@
 {
-  "name": "express-health",
+  "name": "express-health-check",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Express.js server for a health check landing page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fcortesbio/express-health.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "health"
+  ],
+  "author": "fcortesbio",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/fcortesbio/express-health/issues"
   },
-  "homepage": "https://github.com/fcortesbio/express-health#readme"
+  "homepage": "https://github.com/fcortesbio/express-health#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
