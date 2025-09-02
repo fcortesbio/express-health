@@ -2,6 +2,9 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+// Access the environment variable set in the Dockerfile
+const port = process.env.PORT ?? 3001;
+
 // Serve the static HTML file
 app.get("/", (req, res) => {
   res.status(200).sendFile(path.join(__dirname, "index.html"));
